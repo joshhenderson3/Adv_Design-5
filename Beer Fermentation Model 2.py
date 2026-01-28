@@ -12,7 +12,7 @@ https://runjaj-github-io.translate.goog/blog/Gee%20MT.html?_x_tr_sl=es&_x_tr_tl=
 Coded in Julia w/ModellingToolkit.jl library 
 '''
 #------------------------------------------------------------------------------------------------------
-# 1. Model Parameters & Constants ---------------------------------------------------------------------
+# 1. Model Parameters & Constants (Josh)---------------------------------------------------------------
 
 # 1.1 Constants
 R = 8.314   # Ideal gas constant, J/mol/K
@@ -53,16 +53,16 @@ E_maax =
 #------------------------------------------------------------------------------------------------------
 # 2. Reaction Rate Equations (Josh) -------------------------------------------------------------------
 
-# Growth rate, mu, 1/hr
+# Growth rate, mu, 1/hr:
 mu = A_mu * np.exp(-Ea_mu/(R*T))
 
-# Death rate, kd, 1/hr
+# Death rate, kd, 1/hr:
 kd = A_kd * np.exp(-Ea_kd/(R*T))
 
-# VDK formation rate, k1, 1/hr
+# VDK formation rate, k1, 1/hr:
 k1 = A_k1 * np.exp(-Ea_k1/(R*T))
 
-# VDK reduction rate, k2, 1/hr
+# VDK reduction rate, k2, 1/hr:
 k2 = A_k2 * np.exp(-Ea_k2/(R*T))
 
 #------------------------------------------------------------------------------------------------------
