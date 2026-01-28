@@ -24,7 +24,6 @@ R = 8.314   # Ideal gas constant, J/mol/K
 # Yeast growth (mu) & death (kd):
 A_mu = 
 Ea_mu = 
-
 A_kd = 
 Ea_kd = 
 
@@ -32,23 +31,16 @@ Ea_kd =
 #Formation step (k1) sugar -> VDK (flavour); Reduction step (k2) VDK = yeast -> flavourless compounds
 A_k1 = 
 Ea_k1 =
-
 A_k2 =
 Ea_k2 = 
 
 # 1.3 Stoichiometry
-# MONOD saturation constant, Ks, g/L
-Ks =
+Ks = # MONOD saturation constant, Ks, g/L
+Y_xs = # Biomass Yield, Y_xs, biomass(g)/sugar(g)
+Y_ps = # Ethanol Yield, Y_ps, ethanol(g)/sugar(g)
+E_maax = # Toxiicity limit, E_max, g/L - [Ethanol] that stops yeast growth 
 
-# Biomass Yield, Y_xs, biomass(g)/sugar(g)
-Y_xs = 
-
-# Ethanol Yield, Y_ps, ethanol(g)/sugar(g)
-Y_ps = 
-
-# Toxiicity limit, E_max, g/L - [Ethanol] that stops yeast growth 
-E_maax = 
-
+# 1.4 Temperature profile
 
 #------------------------------------------------------------------------------------------------------
 # 2. Reaction Rate Equations (Josh) -------------------------------------------------------------------
